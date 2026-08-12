@@ -9,12 +9,12 @@ import java.util.Scanner;
 작성 날짜: 2025/08/02
 */
 public class BankApp {
-  
-   /*
-  클래스명: Account
-  기능: 계좌번호와 잔액을 관리
-  작성 날짜: 2025/08/02
-  */
+
+    /*
+   클래스명: Account
+   기능: 계좌번호와 잔액을 관리
+   작성 날짜: 2025/08/02
+   */
     static class Account {
         private final String id;
         private BigDecimal balance = BigDecimal.ZERO;
@@ -43,12 +43,12 @@ public class BankApp {
             balance = balance.subtract(amount);
         }
     }
-  
-   /*
-  클래스명: Bank
-  기능: 여러 개의 계좌를 생성하고 관리하는 클래스
-  작성 날짜: 2025/08/02
-  */
+
+    /*
+   클래스명: Bank
+   기능: 여러 개의 계좌를 생성하고 관리하는 클래스
+   작성 날짜: 2025/08/02
+   */
     static class Bank {
         private final Map<String, Account> accounts = new HashMap<>();
 
@@ -119,3 +119,4 @@ public class BankApp {
         }
     }
 }
+
